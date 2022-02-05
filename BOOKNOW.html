@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOOKING FORM</title>
+    <link rel="stylesheet" href="H_N_F.css">
+    <script src="project.js"></script>
+</head>
+<style>
+    .body{
+    background: url("PICS/xx.jpg ") no-repeat fixed;
+    background-size: cover;
+    font-family: sans-serif;
+    color: white;
+}
+
+.form{
+color: black;
+margin-top: 100px;
+}
+.note span{
+display: none;
+}
+.note:hover span{
+    display: block;
+    color: red;
+    font-size:15px;
+}
+.text{
+    border: 2px solid #e2dc98;
+    outline: none;
+    background: none;
+    color: #000000dd;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+.text2{
+    border: 2px solid #e2dc98;
+    outline: none;
+    background: none;
+    color: #000000dd; 
+    border-radius: 15px;
+}
+button, input[type=reset]{
+    width: 35%;
+    background: none;
+    border: 2px solid #e2dc98;
+    color: #000000dd;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+    border-radius: 15px;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+input[type="file"] {
+    -webkit-appearance: initial;
+    background-color: initial;
+    cursor: default;
+    align-items: baseline;
+    color: #968b18;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+}
+
+</style>
+<body class="body">
+    <div class="backpad">
+            <div class="name">GROOM360<sup>0</sup></div><br>
+            <div class="icon">
+                <img src="PICS/icon.png" alt="icon" width="200px" height="100px">
+            </div>
+    <ul>
+        <li><a href="HOME.html#TESTIMONIAL"  target="">TESTIMONIALS</a></li>
+        <li><a href="CONTACT-US.html"  target="">CONTACT US</a></li>
+        <li><a href="ABOUT-US.html"  target="">ABOUT US</a>
+            <ul>
+                <li><a href="ABOUT-US.html#OUR_TEAM"  target="">OUR TEAM</a></li>
+                <li><a href="HOME.html#FAQ's"  target="">FAQ's</a></li>
+            </ul>
+        </li>
+        <li><a href="GALLERY.html"  target="">GALLERY</a>
+            <ul>
+                <li><a href="GALLERY.html#HAIR_CUTS"  target="">HAIR CUTS</a></li>
+                <li><a href="GALLERY.html#HAIR_STYLES"  target="">HAIR STYLES</a></li> 
+                <li><a href="GALLERY.html#WEAVONS" target="">WEAVONS</a></li>
+                <li><a href="GALLERY.html#NAILS"  target="">NAILS</a></li>
+                <li><a href="GALLERY.html#MAKE_UP"  target="">MAKE UP</a></li>
+            </ul>
+        </li>
+        <li><a href=""  target="">REGISTER</a>
+            <ul>
+                <li><a href="LOGIN.html"  target="">LOGIN</a></li>
+                <li><a href="BOOKNOW.html"  target="">BOOK NOW</a></li>
+            </ul>
+        </li>
+        <li><a href="HOME.html"  target="">HOME</a></li>
+    </ul>
+</div><br><br>
+
+<div class="form" align="center">
+    <h2 style="text-align:center;"> FILL THE INFORMATION BELOW </h2><br><br>
+        <form method="POST">
+            <table align="center">
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" placeholder="    Name" title="name" required class="text"><br><br>
+                    </td> 
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                            <input type="radio" name="gender" value="male" required style="margin:0 0 0 10px;"> Male
+                            <input type="radio" name="gender" value="female" required> Female <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone number:</td>
+                    <td>
+                        <input type="text" size="1" value="+234" disabled class="text2" style="margin:0 -9px 0 9px;
+                        padding: 3px; padding-top:5px;background:#0000001f;">
+                        <input type="number" title="number" required class="text"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td class="note">
+                    <input type="text" placeholder="  Address" title="address" required class="text"><br>
+                    <span>
+                        Note: Please type in the address our team can locate to render home service.</span><br>
+                </tr>
+                <tr>
+                        <td>Email address:</td>
+                        <td><input type="email" placeholder="  example@website.com" title="Email" required class="text"><br><br></td>
+                </tr>
+                <tr>
+                    <td>Tick the service(s) you want:</td>
+                    <td >    
+                        <input type="checkbox" name="hair style" value="Hair Cut" style="margin:0 0 0 10px;"> Hair Cut &nbsp;
+                        <input type="checkbox" name="hair style" value="Weavon"> Weavon  &nbsp;
+                        <input type="checkbox" name="hair style" value="Braids"> Braids  &nbsp;
+                        <input type="checkbox" name="hair style" value="Hair Treament"> Hair Treament <br><br>
+                        <input type="checkbox" name="hair style" value="Dreads" style="margin:0 0 0 10px;"> Dread Locks  &nbsp;
+                        <input type="checkbox" name="hair style" value="Manicure &amp; Pedicure"> Manicure &amp; Pedicure  &nbsp;
+                        <input type="checkbox" name="hair style" value="Delivery"> Hair Delivery  &nbsp;
+                        <input type="checkbox" name="hair style" value="Makeup"> Make Up  &nbsp;
+                        <br><br>
+                    </td>
+                </tr>
+                <tr>
+                        <td>Could you explicitly tell <br> us the style you desire:</td>
+                        <td>
+             <textarea cols="50" rows="3" placeholder="write here" value="why i need counselling" required class="text2"
+             style="margin:0 -9px 0 9px;font-family:Georgia, 'Times New Roman', Times, serif;">
+             </textarea><br><br>
+                        </td>
+                </tr>
+                <tr>
+                    <td>You can help us by uploading <br> a picture of the hair style:</td>
+                    <td class="note">
+                        <input type="file" accept=".jpg,.jpeg,.gif,.png" style="margin:0 -9px 0 9px;">
+                        <span>Pictures should be in ".jpg,.jpeg,.gif,.png" format.</span><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>How did you here about us:</td>
+                    <td>
+                        <select name="How you heard about us" style="width: 300px" class="text">
+                            <option value="select here" selected disabled> -select here-</option>
+                            <option value="From a friend">From a friend</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Twitter">Twitter</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="WhatsApp">WhatsApp</option>
+                            <option value="News">News</option>
+                            <option value="Naira Land">Naira Land</option>
+                        </select><br><br>
+                    </td>
+                </tr>
+                <tr> 
+                    <td></td>
+                    <td> 
+                        <input type="reset" value="RESET">
+                    <button>
+                        <a href="HOME.html" target=""> SUBMIT</a>
+                    </button>
+                    </td>
+                 </tr>
+            </table>
+        </form>     
+</div>
+<div >
+<table class="footer foot2">
+    <tr>
+        <td width="25%">
+            <img alt="logo"src = "PICS/icon.png" width="100" height="50"><br>
+                &#128222 08111320720 <br>  
+                <div><img src="PICS/gmail.BMP" alt="twitter image" width="20px" height="20px" style="float:left;">
+                    &nbsp; groom360@gmail.com
+                </div>
+        </td>
+        <td width="25%">
+                <div> COMPANY </div><br><br> 
+                <span><a href="ABOUT-US.html" target="">About Us </a></span> <br>
+                <span><a href="CONTACT-US.html" target="">Contact</a></span><br> 
+                <span><a href="REGISTER.html" target="">Become a member of our team</a></span>
+            </td>
+            <td width="25%">
+                <div>LINKS </div><br><br><br>
+                <span><a href="GALLERY.html" target="">Gallery</a></span> <br>
+                <span><a href="HOME.html#FAQ's"  target="">FAQs</a></span>
+            </td>
+        <td width="25%" ><br>
+            <div>SUPPORT </div><br><br>
+            <div><img src="PICS/twitter.BMP" alt="twitter image" width="20px" height="20px">
+                    &nbsp; Twitter
+            </div> 
+            <div><img src="PICS/whatsapp.png" alt="whatsapp image" width="20px" height="20px"> 
+                &nbsp; WhatsApp
+            </div> 
+            <div><img src="PICS/facebook.BMP" alt="facebook image" width="20px" height="20px">
+                    &nbsp; Facebook
+            </div> 
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <center> &copy; 2019. Groom360<sup>0</sup> . All Rights Reserved.</center>
+        </td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

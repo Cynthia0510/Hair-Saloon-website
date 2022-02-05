@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME</title>
+    <link rel="stylesheet" href="H_N_F.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="project.js"></script>
+</head>
+<body class="body">
+    <script>
+        var i = 0;
+        var images = [];
+        var time = 5000;
+
+        images[0] = "PICS/salon1.jpg";
+        images[1] = "PICS/salon2.jpg";
+        images[2] = "PICS/salon3.jpg";
+        images[3] = "PICS/salon4.jpg";
+
+        function changeimg(){
+            document.slide.src = images [i];
+            if (i < images.length - 1){
+                i++;
+            } else {
+                i = 0;
+            }
+            setTimeout("changeimg()", time);
+        }
+        window.onload = changeimg;
+    </script>
+    <img name="slide" alt="" class="" width="100%" height="800">
+
+    <div class="backpad">
+            <div class="name">GROOM360<sup>0</sup></div><br>
+            <div class="icon">
+                <img src="PICS/icon.png" alt="icon" width="200px" height="100px">
+            </div>
+    <ul>
+        <li><a href="HOME.html#TESTIMONIAL"  target="">TESTIMONIALS</a></li>
+        <li><a href="CONTACT-US.html"  target="">CONTACT US</a></li>
+        <li><a href="ABOUT-US.html"  target="">ABOUT US</a>
+            <ul>
+                <li><a href="ABOUT-US.html#OUR_TEAM"  target="">OUR TEAM</a></li>
+                <li><a href="HOME.html#FAQ's"  target="">FAQ's</a></li>
+            </ul>
+        </li>
+        <li><a href="GALLERY.html"  target="">GALLERY</a>
+            <ul>
+                <li><a href="GALLERY.html#HAIR_CUTS"  target="">HAIR CUTS</a></li>
+                <li><a href="GALLERY.html#HAIR_STYLES"  target="">HAIR STYLES</a></li> 
+                <li><a href="GALLERY.html#WEAVONS" target="">WEAVONS</a></li>
+                <li><a href="GALLERY.html#NAILS"  target="">NAILS</a></li>
+                <li><a href="GALLERY.html#MAKE_UP"  target="">MAKE UP</a></li>
+            </ul>
+        </li>
+        <li><a href="REGISTER.html"  target="">REGISTER</a>
+            <ul>
+                <li><a href="LOGIN.html"  target="">LOGIN</a></li>
+                <li><a href="BOOKNOW.html"  target="">BOOK NOW</a></li>
+            </ul>
+        </li>
+        <li><a href="HOME.html"  target="">HOME</a></li>
+    </ul>
+</div>
+<div class="homeytext">
+        <span style="font-size: 50px;font-weight:900">“</span>  Our goal is to serve you better. <br>
+        Our clients are our priority, you deserve the best. <br>
+        So book an appointment with us today and you'll never regret it. <br>
+        Feel free to send us a feedback at the contact-us section.
+        <span style="font-size: 50px;font-weight:900"> ”</span><br><br><br>
+<button style="font-size: 40px;color: white;"><a href="BOOKNOW.html" target=""> Book now</a></button>
+</div>
+<div class="service" style="margin-top:-5px;"><br>
+    <h1>Our Services</h1><br>
+   <div style="margin-top: -25px;"> - - - - - - - - - - -
+       <img src="PICS/scissors.png" alt="scissors" width="100px" height="50px" style="margin-bottom:-20px;">
+       - - - - - - - - - - -</div><br>
+    <h3>We offer a range of services such as:</h3><br>
+    <div>
+    <table width="100%">
+        <tr>
+            <td><img src="PICS/hair7.jpg" alt="" width="350px" height="300px" class="trans">
+                <div>Outdoor hair dressing service.</div>
+            </td>
+            <td><img src="PICS/fine.jpg" alt="" width="420px" height="300px" class="trans">
+                <div>Outdoor Event make-up for women.</div>
+            </td>
+            <td><br> <img src="PICS/hair33.jpg" alt="" width="350px" height="300px" class="trans">
+                <div>Outdoor hair-cut service for men and women.</div>
+            </td>
+            <td><img src="PICS/wiv2.jpg" alt="" width="372px" height="310px" class="trans">
+                <div>Hair delivery service.</div>
+            </td>
+        </tr>
+    </table><br>
+    <div>
+        Our services are rendered at an affordable prices for our unique customers. <br>
+        We have standby workers waiting to take your order.
+    </div><br><br>
+</div>
+    </div>
+
+    <div class="align"> 
+    <span style="font-size:20px">
+        <h1>Why Groom360<sup>0</sup>?</h1>
+    </span><br>
+    <div style="margin-top: -25px;"> - - - - - - - - - - -
+            <img src="PICS/scissors.png" alt="scissors" width="100px" height="50px" style="margin-bottom:-20px;">
+            - - - - - - - - - - -</div><br>
+    <div>
+    <table width="100%">
+        <tr>
+            <td>
+                <div><br>
+                <img src="PICS\money2.jpg" alt="nice pix" width="70px" height="70px"><br>
+                <h3>Earn Money </h3><br>
+                Deliver and earn extra income. Easy and simple <br> with a smile.
+                </div> 
+            </td>
+            <td>
+                <div><br>
+                    <img src="PICS\best1.jpg" alt="nice pix" width="100px" height="70px"><br>
+                <h3>Look Nice anywhere, anytime.</h3><br> 
+                &nbsp; Deliver services anywhere, <br> anytime according to your personal schedule. <br>
+                You are your own boss.
+                </div> 
+            </td>
+            <td>
+                <div><br>
+                    <img src="PICS\cancel1.jpg" alt="nice pix" width="70px" height="70px"><br>
+                <h3>No monthly rent fees</h3><br> 
+                You may not need a shop to make money. <br>
+                All you gotta do is meet up with a client <br> at their desired address and 
+                deliver required service.
+                </div>
+            </td>
+        </tr>
+    </table><br><br>
+    </div>
+    </div>
+
+<div  id="FAQ's" class="service"><br>
+    <h1>FAQ's</h1><br>
+    <div style="margin-top: -25px;"> - - - - - - - - - - -
+            <img src="PICS/scissors.png" alt="scissors" width="100px" height="50px" style="margin-bottom:-20px;">
+            - - - - - - - - - - -</div><br>
+    <div align="left">
+        <span style="color:#e2dc98;">Q: How do I get paid?</span> <br>
+        A: Clients pay you in cash or via online transfer platform. We pay out to your bank account every week. <br><br>
+        <span style="color:#e2dc98;">Q: How much do I pay GROOM360<sup>0</sup>?</span> <br>
+        We do not have any monthly fees, so you only pay for finished service rendered.
+        We usually ask for 10% to 20% depending on our clients. <br> You can get more information by contacting us. <br><br>
+        <span style="color:#e2dc98;">Q: How long does it take to sign up?</span> <br>
+        Submitting your information takes just 5 minutes. After that you will get a day training in our office. <br><br>
+        <span style="color:#e2dc98;">Q: What if i dont have a smart Phone?</span> <br>
+        Our team suggest you budget Android smart phone that you can buy and finance. <br><br>
+        <span style="color:#e2dc98;">Q: What if I dont have the required skill?</span> <br>
+        Our team can help you acquire the relevant skill by assigning you to our partners that will teach you all you need. <br><br>
+    </div>
+    <div>
+        <button >
+            <a href="LOGIN.html">Sign Up to work with us >></a>
+        </button><br><br>
+        Got any concerns? <a href="#" class="contact">Contact Us</a>
+    </div><br><br>
+</div>
+
+<div class="about">
+    <h1>About Groom360<sup>0</sup></h1><br>
+    <div style="margin-top: -25px;"> - - - - - - - - - - -
+            <img src="PICS/scissors.png" alt="scissors" width="100px" height="50px" style="margin-bottom:-20px;">
+            - - - - - - - - - - -</div><br>
+    <div style="font-size: 25px;">
+            Find out our story.. <br>
+            What motivates us, and how we are igniting opportunity. <br><br><br>  
+    </div>
+    <a href="ABOUT-US.html" target="" class="contact"> LEARN MORE >></a><br><br>
+    </div>
+<div class="service"><br>
+    <h1 >Testimonials</h1><br>
+    <div style="margin-top: -25px;"> - - - - - - - - - - -
+            <img src="PICS/scissors.png" alt="scissors" width="100px" height="50px" style="margin-bottom:-20px;">
+            - - - - - - - - - - -</div><br>
+    <div align="left">
+<table  align="center">
+    <tr>
+        <td width="30%">
+            <div class="view">
+                    <div class="circle" >
+                            <img src="PICS/female26.jpg" alt="" class="image" >
+                        </div>  
+                    <div class="box"> <br>
+                            <span style="font-size: 50px;font-weight:900">“</span> 
+                         I had a nice experience and the service was worth the price. 
+                          My hair stylist was so lively that i lost track of the time, 
+                          she did the exact hair i had in mind. I didn't have cash at hand 
+                         and she said not to worry that a transfer was allowed. Am so going 
+                         to introduce my friends to this website. Kudos guys
+                         <span style="font-size: 50px;font-weight:900"> ”</span>
+                         <br> <span style="margin-left: 150px">Danny - Owerri</span> <br><br>
+                    </div>
+                </div>  
+    </td>
+    <td width="30%">
+            <div class="view">
+                    <div class="circle" >
+                            <img src="PICS/cut7.jpg" alt="" class="image" >
+                        </div>  
+                    <div class="box"> <br>
+                            <span style="font-size: 50px;font-weight:900">“</span> 
+                            There is nothing as compared to staying at the comfort of our 
+                            home and have your barber give you a hair cut. I always hated 
+                            staying in queue to wait for my turn in a barbing salon. thumbs up guys.
+                            <span style="font-size: 50px;font-weight:900"> ”</span><br>
+                            <br><br><br> <span style="margin-left: 150px">Austin - Owerri</span> <br><br><br>
+                    </div>
+                </div>  
+    </td>
+    <td width="30%" >
+            <div class="view">
+                <div class="circle" >
+                        <img src="PICS/make11.jpg" alt="" class="image" >
+                    </div>  
+                <div class="box"> <br>
+                        <span style="font-size: 50px;font-weight:900">“</span>   
+                       I am so happy a friend introduced me to this awesome website, 
+                       I couldn't cope with the stress of planning for my wedding. 
+                       I just had to book appointments for my wedding makeup, hair,
+                        nails and haircut for my husband just at a go. My appointment 
+                        was honoured immediately without delay. Thanks guys you are a life saver.
+                        <span style="font-size: 50px;font-weight:900"> ”</span><br>
+                        <span style="margin-left: 150px">Ada - Owerri</span>
+                </div>
+            </div> 
+        </td>
+    </tr>
+</table><br>
+</div>
+<div >
+<table class="footer" id="TESTIMONIAL">
+        <tr>
+            <td width="25%">
+                <img alt="logo"src = "PICS/icon.png" width="100" height="50"><br>
+                    &#128222 08111320720 <br>  
+                    <div><img src="PICS/gmail.BMP" alt="twitter image" width="20px" height="20px">
+                        &nbsp; groom360@gmail.com
+                    </div>
+            </td>
+            <td width="25%">
+                    <div> COMPANY </div><br><br> 
+                    <span><a href="ABOUT-US.html" target="">About Us </a></span> <br>
+                    <span><a href="CONTACT-US.html" target="">Contact</a></span><br> 
+                    <span><a href="REGISTER.html" target="">Become a member of our team</a></span>
+                </td>
+                <td width="25%">
+                    <div>LINKS </div><br><br><br>
+                    <span><a href="GALLERY.html" target="">Gallery</a></span> <br>
+                    <span><a href="HOME.html#FAQ's"  target="">FAQs</a></span>
+                </td>
+            <td width="25%" ><br>
+                <div>SUPPORT </div><br><br>
+                <div><img src="PICS/twitter.BMP" alt="twitter image" width="20px" height="20px">
+                     &nbsp; Twitter
+                </div> 
+                <div><img src="PICS/whatsapp.png" alt="whatsapp image" width="20px" height="20px"> 
+                    &nbsp; WhatsApp
+                </div> 
+                <div><img src="PICS/facebook.BMP" alt="facebook image" width="20px" height="20px">
+                     &nbsp; Facebook
+                </div> 
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <center> &copy; 2019. Groom360<sup>0</sup> . All Rights Reserved.</center>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
